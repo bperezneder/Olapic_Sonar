@@ -1,7 +1,7 @@
 Feature: Sonar Rest Api, GET method
 
     Scenario: Getting Sonar Object, Sunny Day scenario, facebook
-		Given that I want to PUT a Sonar object
+	Given that I want to PUT a Sonar object
         Given the parameter "PROVIDER_NAME" is "facebook"
         Given the parameter "PROVIDER_PLACE_ID" is "100473940700"
         When I perform the request to "/v1/places"
@@ -16,7 +16,7 @@ Feature: Sonar Rest Api, GET method
         Then the response has a "data/url" property matching "https://www.facebook.com/HyattatOlive8"
 		
     Scenario: Getting Sonar Object, Sunny Day scenario, foursquare
-		Given that I want to PUT a Sonar object
+	Given that I want to PUT a Sonar object
         Given the parameter "PROVIDER_NAME" is "foursquare"
         Given the parameter "PROVIDER_PLACE_ID" is "4b7755f5f964a5200f932ee3"
         When I perform the request to "/v1/places"
@@ -103,7 +103,7 @@ Feature: Sonar Rest Api, GET method
         Then the response has a "data/url" property matching "https://www.facebook.com/HyattatOlive8"				
 		
     Scenario: Getting Sonar Object, Deleted Object
-		Given that I want to PUT a Sonar object
+	Given that I want to PUT a Sonar object
         Given the parameter "PROVIDER_NAME" is "facebook"
         Given the parameter "PROVIDER_PLACE_ID" is "100473940700"
         When I perform the request to "/v1/places"
