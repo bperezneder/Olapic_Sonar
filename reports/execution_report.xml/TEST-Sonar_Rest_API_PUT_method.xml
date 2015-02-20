@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite classname="behat.features" errors="0" failures="0" name="Sonar Rest Api, PUT method" file="/home/nano/Documents/Olapic_Sonar/features/Sonar_Rest_API_PUT_method.feature" tests="12" time="0.228199">
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Sunny Day scenario" time="0.227888">
+    </testcase>
+</testsuite>
