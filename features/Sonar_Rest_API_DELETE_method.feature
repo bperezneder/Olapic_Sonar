@@ -1,4 +1,4 @@
-Feature: Sonar Rest Api, GET method
+Feature: Sonar Rest Api, DELETE method
 
     Scenario: Deletting Sonar Object, Sunny Day scenario
         Given that I want to PUT a Sonar object
