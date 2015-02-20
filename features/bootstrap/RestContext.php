@@ -67,6 +67,17 @@ class RestContext extends BehatContext
     {
         $this->_parameters[$parameterName] = "/".$parameterValue;
     }
+	
+	/**
+	 * @Given /^that the UUID is "([^"]*)"$/
+     */
+    public function theParameterIs($uuidValue)
+    {
+        $parameters  = array();
+    	$parameters['PROVIDER_NAME']  = '/sonar';
+    	$parameters['SONAR_PLACE_ID']  = '/'.$this->_uuid;
+    	$this->_parameters = $parameters;    	
+    }
 
     /**
      * @When /^I perform the request to "([^"]*)"$/
