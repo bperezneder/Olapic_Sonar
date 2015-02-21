@@ -8,7 +8,8 @@ use Symfony\Component\Yaml\Yaml;
 class RestContext extends BehatContext
 {
 
-    private $_restObject        = null;
+    private $_baseUrl 			= "http://uk9c0jvb9f6nvxvhursp.olapic.com";
+	private $_restObject        = null;
     private $_restObjectType    = null;
     private $_restObjectMethod  = 'get';
     private $_client            = null;
@@ -71,7 +72,7 @@ class RestContext extends BehatContext
 	/**
 	 * @Given /^that the UUID is "([^"]*)"$/
      */
-    public function theParameterIs($uuidValue)
+    public function theUuidIs($uuidValue)
     {
         $parameters  = array();
     	$parameters['PROVIDER_NAME']  = '/sonar';
@@ -84,32 +85,33 @@ class RestContext extends BehatContext
      */
     public function iRequest($pageUrl)
     {
-        $baseUrl 			= "http://uk9c0jvb9f6nvxvhursp.olapic.com";
-        $this->_requestUrl 	= $baseUrl.$pageUrl;
+        $this->_requestUrl 	= $this->_baseUrl.$pageUrl;
         foreach($this->_parameters as $parameterName => $parameterValue) {
         	$this->_requestUrl 	.= $parameterValue;
         }
-
+        
+        $response = null;
         switch (strtoupper($this->_restObjectMethod)) {
-            case 'GET':
-                $this->_response = $this->_client
-                    ->get($this->_requestUrl)
-                    ->send();
-                break;
-            case 'PUT':
-                $postFields = (array)$this->_restObject;
-                $this->_response = $this->_client
-                    ->put($this->_requestUrl)
-                    ->send();
-                break;
-            case 'DELETE':
-            	$this->_response = $this->_client
-                    ->delete($this->_requestUrl)
-                    ->send();
-            	break;
-        }
-//         echo "Response:".$this->_response;
-    }
+	    	case 'GET':
+	        	$response = $this->_client
+	            	->get($this->_requestUrl);
+	            break;
+	        case 'PUT':
+	            $response = $this->_client
+	                ->put($this->_requestUrl);	                
+	            break;
+	        case 'DELETE':
+	          	$response = $this->_client
+	                ->delete($this->_requestUrl);
+	          	break;
+	        }
+	        
+	        try {
+	        	$this->_response = $response->send();
+	        } catch (\Guzzle\Http\Exception\ClientErrorResponseException $e) {
+				$this->_response = $e->getResponse();
+	        }
+	    }
 
     /**
      * @Then /^the response is a valid JSON$/

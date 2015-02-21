@@ -325,14 +325,14 @@
 <div class="feature">
 <h2>
 <span class="keyword">Feature: </span>
-<span class="title">Sonar Rest Api, DELETE method</span>
+<span class="title">Sonar Rest Api, PUT method</span>
 </h2>
 
 <div class="scenario">
 <h3>
 <span class="keyword">Scenario: </span>
-<span class="title">Deletting Sonar Object, Sunny Day scenario</span>
-<span class="path">features/Sonar_Rest_API_DELETE_method.feature:3</span>
+<span class="title">Creating a new Sonar Object, Sunny Day scenario, facebook</span>
+<span class="path">features/01-Sonar_Rest_API_PUT_method.feature:3</span>
 </h3>
 <ol>
 <li class="passed">
@@ -340,6 +340,590 @@
 <span class="keyword">Given </span>
 <span class="text">that I want to PUT a Sonar object</span>
 <span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="failed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+<pre class="backtrace">HTTP code does not match 200 (actual: 201)</pre>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/id</strong>" property</span>
+<span class="path">RestContext::theResponseHasAProperty()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/name</strong>" property matching "<strong class="skipped_param">Hyatt at Olive 8</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/url</strong>" property matching "<strong class="skipped_param">https://www.facebook.com/HyattatOlive8</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/geopoint/0</strong>" property matching "<strong class="skipped_param">47.613645</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/source/provider_id</strong>" property matching "<strong class="skipped_param">100473940700</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/source/provider_name</strong>" property matching "<strong class="skipped_param">facebook</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Creating a new Sonar Object, Sunny Day scenario, foursquare</span>
+<span class="path">features/01-Sonar_Rest_API_PUT_method.feature:17</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="failed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+<pre class="backtrace">HTTP code does not match 200 (actual: 201)</pre>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/id</strong>" property</span>
+<span class="path">RestContext::theResponseHasAProperty()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/name</strong>" property matching "<strong class="skipped_param">Waikiki Beach Marriott Resort &amp; Spa</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/url</strong>" property matching "<strong class="skipped_param">https://foursquare.com/v/waikiki-beach-marriott-resort--spa/4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/geopoint/0</strong>" property matching "<strong class="skipped_param">21.27397281</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/source/provider_id</strong>" property matching "<strong class="skipped_param">4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">data/source/provider_name</strong>" property matching "<strong class="skipped_param">foursquare</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Creating a new Sonar Object, Empty "PROVIDER_NAME"</span>
+<span class="path">features/01-Sonar_Rest_API_PUT_method.feature:31</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param"></strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Creating a new Sonar Object, Empty "PROVIDER_PLACE_ID"</span>
+<span class="path">features/01-Sonar_Rest_API_PUT_method.feature:41</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param"></strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Creating a new Sonar Object, Invalid "PROVIDER_NAME"</span>
+<span class="path">features/01-Sonar_Rest_API_PUT_method.feature:51</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">xxxxxxx</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">Unknown provider with name: xxxxxxx</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Creating a new Sonar Object, Invalid "PROVIDER_PLACE_ID"</span>
+<span class="path">features/01-Sonar_Rest_API_PUT_method.feature:61</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4x7755x5x964x5200x932xx3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Creating a new Sonar Object, Non-Existent "PROVIDER_NAME"</span>
+<span class="path">features/01-Sonar_Rest_API_PUT_method.feature:71</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">myspace</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">Unknown provider with name: myspace</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Creating a new Sonar Object, Non-Existent "PROVIDER_PLACE_ID"</span>
+<span class="path">features/01-Sonar_Rest_API_PUT_method.feature:81</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">999999999999</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="feature">
+<h2>
+<span class="keyword">Feature: </span>
+<span class="title">Sonar Rest Api, GET method</span>
+</h2>
+
+<div class="scenario background">
+<h3>
+<span class="keyword">Background: </span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:3</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
 </div>
 </li>
 <li class="passed">
@@ -373,112 +957,6 @@
 <li class="passed">
 <div class="step">
 <span class="keyword">Given </span>
-<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
-<span class="path">RestContext::theParameterIs()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Given </span>
-<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
-<span class="path">RestContext::theParameterIs()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">When </span>
-<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
-<span class="path">RestContext::iRequest()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Then </span>
-<span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
-<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Then </span>
-<span class="text">the response is a valid JSON</span>
-<span class="path">RestContext::theResponseIsAValidJson()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Then </span>
-<span class="text">the response has a "<strong class="passed_param">data/instagram_deleted</strong>" property</span>
-<span class="path">RestContext::theResponseHasAProperty()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Then </span>
-<span class="text">the response has a "<strong class="passed_param">data/source_deleted</strong>" property</span>
-<span class="path">RestContext::theResponseHasAProperty()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Then </span>
-<span class="text">the response has a "<strong class="passed_param">data/sonar_deleted</strong>" property</span>
-<span class="path">RestContext::theResponseHasAProperty()</span>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="feature">
-<h2>
-<span class="keyword">Feature: </span>
-<span class="title">Sonar Rest Api, GET method</span>
-</h2>
-
-<div class="scenario background">
-<h3>
-<span class="keyword">Background: </span>
-<span class="path">features/Sonar_Rest_API_GET_method.feature:3</span>
-</h3>
-<ol>
-<li class="passed">
-<div class="step">
-<span class="keyword">Given </span>
-<span class="text">that I want to PUT a Sonar object</span>
-<span class="path">RestContext::thatIWantToPutASonarObject()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Given </span>
-<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
-<span class="path">RestContext::theParameterIs()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Given </span>
-<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
-<span class="path">RestContext::theParameterIs()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">When </span>
-<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
-<span class="path">RestContext::iRequest()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Given </span>
-<span class="text">that I want to PUT a Sonar object</span>
-<span class="path">RestContext::thatIWantToPutASonarObject()</span>
-</div>
-</li>
-<li class="passed">
-<div class="step">
-<span class="keyword">Given </span>
 <span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
 <span class="path">RestContext::theParameterIs()</span>
 </div>
@@ -502,15 +980,15 @@
 <div class="scenario">
 <h3>
 <span class="keyword">Scenario: </span>
-<span class="title">Getting Sonar Object, Sunny Day scenario</span>
-<span class="path">features/Sonar_Rest_API_GET_method.feature:14</span>
+<span class="title">Getting Sonar Object, Sunny Day scenario, facebook</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:13</span>
 </h3>
 <ol>
 <li class="passed">
 <div class="step">
 <span class="keyword">Given </span>
-<span class="text">that I want to GET a Sonar object</span>
-<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
 </div>
 </li>
 <li class="passed">
@@ -525,6 +1003,20 @@
 <span class="keyword">Given </span>
 <span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
 <span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
 </div>
 </li>
 <li class="passed">
@@ -578,18 +1070,494 @@
 </li>
 </ol>
 </div>
-</div>
-<div class="feature">
-<h2>
-<span class="keyword">Feature: </span>
-<span class="title">Sonar Rest Api, GET method using the UUID</span>
-</h2>
-
 <div class="scenario">
 <h3>
 <span class="keyword">Scenario: </span>
-<span class="title">Getting Sonar Object using the UUID, Sunny Day scenario</span>
-<span class="path">features/Sonar_Rest_API_GET_method_with_UUID.feature:3</span>
+<span class="title">Getting Sonar Object, Sunny Day scenario, foursquare</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:27</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/provider_id</strong>" property matching "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/provider_name</strong>" property matching "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/name</strong>" property matching "<strong class="passed_param">Waikiki Beach Marriott Resort &amp; Spa</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/url</strong>" property matching "<strong class="passed_param">https://foursquare.com/v/waikiki-beach-marriott-resort--spa/4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object, Empty "PROVIDER_NAME"</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:41</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param"></strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object, Empty "PROVIDER_PLACE_ID"</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:51</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param"></strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object, Invalid "PROVIDER_NAME"</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:61</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">xxxxxxxx</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">Unknown provider with name: xxxxxxx</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object, Invalid "PROVIDER_PLACE_ID"</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:71</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">9x7755x5x964x5200x932xx3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object, Non-Existent "PROVIDER_NAME"</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:81</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">telnet</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">Unknown provider with name: telnet</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object, Non-Existent "PROVIDER_PLACE_ID"</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:91</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">999999999999</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object, Deleted Object, facebook</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:101</span>
 </h3>
 <ol>
 <li class="passed">
@@ -622,9 +1590,275 @@
 </li>
 <li class="passed">
 <div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
 <span class="keyword">Then </span>
 <span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
 <span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="failed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+<pre class="backtrace">HTTP code does not match 404 (actual: 200)</pre>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">meta/error</strong>" property matching "<strong class="skipped_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">meta/error_message</strong>" property matching "<strong class="skipped_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object, Deleted Object, foursquare</span>
+<span class="path">features/02-Sonar_Rest_API_GET_method.feature:116</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object</span>
+<span class="path">RestContext::thatIWantToGetASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="failed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+<pre class="backtrace">HTTP code does not match 404 (actual: 200)</pre>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">meta/error</strong>" property matching "<strong class="skipped_param">SourcePlaceNotFound</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">meta/error_message</strong>" property matching "<strong class="skipped_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="feature">
+<h2>
+<span class="keyword">Feature: </span>
+<span class="title">Sonar Rest Api, GET method using the UUID</span>
+</h2>
+
+<div class="scenario background">
+<h3>
+<span class="keyword">Background: </span>
+<span class="path">features/03-Sonar_Rest_API_GET_method_with_UUID.feature:3</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object using the UUID, Sunny Day scenario, facebook</span>
+<span class="path">features/03-Sonar_Rest_API_GET_method_with_UUID.feature:13</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
 </div>
 </li>
 <li class="passed">
@@ -706,18 +1940,11 @@
 </li>
 </ol>
 </div>
-</div>
-<div class="feature">
-<h2>
-<span class="keyword">Feature: </span>
-<span class="title">Sonar Rest Api, PUT method</span>
-</h2>
-
 <div class="scenario">
 <h3>
 <span class="keyword">Scenario: </span>
-<span class="title">Creating a new Sonar Object, Sunny Day scenario</span>
-<span class="path">features/Sonar_Rest_API_PUT_method.feature:3</span>
+<span class="title">Getting Sonar Object using the UUID, Sunny Day scenario, foursquare</span>
+<span class="path">features/03-Sonar_Rest_API_GET_method_with_UUID.feature:30</span>
 </h3>
 <ol>
 <li class="passed">
@@ -730,15 +1957,36 @@
 <li class="passed">
 <div class="step">
 <span class="keyword">Given </span>
-<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
 <span class="path">RestContext::theParameterIs()</span>
 </div>
 </li>
 <li class="passed">
 <div class="step">
 <span class="keyword">Given </span>
-<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
 <span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I record the "<strong class="passed_param">data/id</strong>" parameter as UUID</span>
+<span class="path">RestContext::IRecordTheParameterAsUUID()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object using the UUID</span>
+<span class="path">RestContext::thatIWantToGetASonarObjectUsingTheUuid()</span>
 </div>
 </li>
 <li class="passed">
@@ -772,51 +2020,1117 @@
 <li class="passed">
 <div class="step">
 <span class="keyword">Then </span>
-<span class="text">the response has a "<strong class="passed_param">data/name</strong>" property matching "<strong class="passed_param">Hyatt at Olive 8</strong>"</span>
+<span class="text">the response has a "<strong class="passed_param">data/name</strong>" property matching "<strong class="passed_param">Waikiki Beach Marriott Resort &amp; Spa</strong>"</span>
 <span class="path">RestContext::thePropertyMatches()</span>
 </div>
 </li>
 <li class="passed">
 <div class="step">
 <span class="keyword">Then </span>
-<span class="text">the response has a "<strong class="passed_param">data/url</strong>" property matching "<strong class="passed_param">https://www.facebook.com/HyattatOlive8</strong>"</span>
+<span class="text">the response has a "<strong class="passed_param">data/url</strong>" property matching "<strong class="passed_param">https://foursquare.com/v/waikiki-beach-marriott-resort--spa/4b7755f5f964a5200f932ee3</strong>"</span>
 <span class="path">RestContext::thePropertyMatches()</span>
 </div>
 </li>
 <li class="passed">
 <div class="step">
 <span class="keyword">Then </span>
-<span class="text">the response has a "<strong class="passed_param">data/geopoint/0</strong>" property matching "<strong class="passed_param">47.613645</strong>"</span>
+<span class="text">the response has a "<strong class="passed_param">data/geopoint/0</strong>" property matching "<strong class="passed_param">21.27397281</strong>"</span>
 <span class="path">RestContext::thePropertyMatches()</span>
 </div>
 </li>
 <li class="passed">
 <div class="step">
 <span class="keyword">Then </span>
-<span class="text">the response has a "<strong class="passed_param">data/source/provider_id</strong>" property matching "<strong class="passed_param">100473940700</strong>"</span>
+<span class="text">the response has a "<strong class="passed_param">data/source/provider_id</strong>" property matching "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
 <span class="path">RestContext::thePropertyMatches()</span>
 </div>
 </li>
 <li class="passed">
 <div class="step">
 <span class="keyword">Then </span>
-<span class="text">the response has a "<strong class="passed_param">data/source/provider_name</strong>" property matching "<strong class="passed_param">facebook</strong>"</span>
+<span class="text">the response has a "<strong class="passed_param">data/source/provider_name</strong>" property matching "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object using the UUID, Empty UUID</span>
+<span class="path">features/03-Sonar_Rest_API_GET_method_with_UUID.feature:47</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object using the UUID</span>
+<span class="path">RestContext::thatIWantToGetASonarObjectUsingTheUuid()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that the UUID is "<strong class="passed_param"></strong>"</span>
+<span class="path">RestContext::theUuidIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object using the UUID, Ivalid UUID</span>
+<span class="path">features/03-Sonar_Rest_API_GET_method_with_UUID.feature:56</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object using the UUID</span>
+<span class="path">RestContext::thatIWantToGetASonarObjectUsingTheUuid()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that the UUID is "<strong class="passed_param">xx5c8892-7597-45x5-9xxf-8x7xx2x7848x</strong>"</span>
+<span class="path">RestContext::theUuidIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object using the UUID, Non-Existent UUID</span>
+<span class="path">features/03-Sonar_Rest_API_GET_method_with_UUID.feature:65</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object using the UUID</span>
+<span class="path">RestContext::thatIWantToGetASonarObjectUsingTheUuid()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that the UUID is "<strong class="passed_param">ffffffff-ffff-ffff-ffff-ffffffffffff</strong>"</span>
+<span class="path">RestContext::theUuidIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object using the UUID, Deleted Object, facebook</span>
+<span class="path">features/03-Sonar_Rest_API_GET_method_with_UUID.feature:74</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I record the "<strong class="passed_param">data/id</strong>" parameter as UUID</span>
+<span class="path">RestContext::IRecordTheParameterAsUUID()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object using the UUID</span>
+<span class="path">RestContext::thatIWantToGetASonarObjectUsingTheUuid()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="failed_param">meta/error</strong>" property matching "<strong class="failed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+<pre class="backtrace">Property value mismatch! (given: NotFoundHttpException, match: SonarPlaceNotFound)</pre>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">meta/error_message</strong>" property matching "<strong class="skipped_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Getting Sonar Object using the UUID, Deleted Object, foursquare</span>
+<span class="path">features/03-Sonar_Rest_API_GET_method_with_UUID.feature:90</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I record the "<strong class="passed_param">data/id</strong>" parameter as UUID</span>
+<span class="path">RestContext::IRecordTheParameterAsUUID()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to GET a Sonar object using the UUID</span>
+<span class="path">RestContext::thatIWantToGetASonarObjectUsingTheUuid()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="failed_param">meta/error</strong>" property matching "<strong class="failed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+<pre class="backtrace">Property value mismatch! (given: NotFoundHttpException, match: SonarPlaceNotFound)</pre>
+</li>
+<li class="skipped">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="skipped_param">meta/error_message</strong>" property matching "<strong class="skipped_param">No route found for</strong>"</span>
 <span class="path">RestContext::thePropertyMatches()</span>
 </div>
 </li>
 </ol>
 </div>
 </div>
-<div class="summary passed">
+<div class="feature">
+<h2>
+<span class="keyword">Feature: </span>
+<span class="title">Sonar Rest Api, DELETE method</span>
+</h2>
+
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Sunny Day scenario, facebook</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:3</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/instagram_deleted</strong>" property</span>
+<span class="path">RestContext::theResponseHasAProperty()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/source_deleted</strong>" property</span>
+<span class="path">RestContext::theResponseHasAProperty()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/sonar_deleted</strong>" property</span>
+<span class="path">RestContext::theResponseHasAProperty()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Sunny Day scenario, foursquare</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:16</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4b7755f5f964a5200f932ee3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/instagram_deleted</strong>" property</span>
+<span class="path">RestContext::theResponseHasAProperty()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/source_deleted</strong>" property</span>
+<span class="path">RestContext::theResponseHasAProperty()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">data/sonar_deleted</strong>" property</span>
+<span class="path">RestContext::theResponseHasAProperty()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Empty PROVIDER_NAME</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:29</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param"></strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Empty PROVIDER_PLACE_ID</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:39</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param"></strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">NotFoundHttpException</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No route found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Invalid PROVIDER_NAME</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:49</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">xxxxxxxx</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">PlaceNotDeleted</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">Unknown provider with name: xxxxxxxx</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Invalid PROVIDER_PLACE_ID</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:59</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">foursquare</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">4x7755f5x964x5200x932xx3</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">PlaceNotDeleted</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Non-Existent PROVIDER_NAME</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:69</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">myspace</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">PlaceNotDeleted</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">Unknown provider with name: myspace</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Non-Existent PROVIDER_PLACE_ID</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:79</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">999999999999</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">PlaceNotDeleted</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3>
+<span class="keyword">Scenario: </span>
+<span class="title">Deletting Sonar Object, Deletig the same object twice</span>
+<span class="path">features/04-Sonar_Rest_API_DELETE_method.feature:89</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to PUT a Sonar object</span>
+<span class="path">RestContext::thatIWantToPutASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_NAME</strong>" is "<strong class="passed_param">facebook</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">the parameter "<strong class="passed_param">PROVIDER_PLACE_ID</strong>" is "<strong class="passed_param">100473940700</strong>"</span>
+<span class="path">RestContext::theParameterIs()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">200</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">that I want to DELETE a Sonar object</span>
+<span class="path">RestContext::thatIWantToDeleteASonarObject()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I perform the request to "<strong class="passed_param">/v1/places</strong>"</span>
+<span class="path">RestContext::iRequest()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">I expect the response status code to be <strong class="passed_param">404</strong></span>
+<span class="path">RestContext::theResponseStatusCodeShouldBe()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response is a valid JSON</span>
+<span class="path">RestContext::theResponseIsAValidJson()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error</strong>" property matching "<strong class="passed_param">PlaceNotDeleted</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the response has a "<strong class="passed_param">meta/error_message</strong>" property matching "<strong class="passed_param">No SourcePlace found for</strong>"</span>
+<span class="path">RestContext::thePropertyMatches()</span>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="summary failed">
 <div class="counters">
 <p class="scenarios">
-4 scenarios (<strong class="passed">4 passed</strong>)
+34 scenarios (<strong class="passed">28 passed</strong>, <strong class="failed">6 failed</strong>)
 </p>
 <p class="steps">
-59 steps (<strong class="passed">59 passed</strong>)
+469 steps (<strong class="passed">441 passed</strong>, <strong class="skipped">22 skipped</strong>, <strong class="failed">6 failed</strong>)
 </p>
 <p class="time">
-0m3.565s
+0m35.404s
 </p>
 </div>
 <div class="switchers">
