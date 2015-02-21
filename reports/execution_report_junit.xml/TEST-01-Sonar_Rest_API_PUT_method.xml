@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite classname="behat.features" errors="0" failures="0" name="Sonar Rest Api, PUT method" file="/home/nano/Documents/Olapic_Sonar/features/01-Sonar_Rest_API_PUT_method.feature" tests="114" time="24.805622">
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Sunny Day scenario, facebook" time="7.339699">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Sunny Day scenario, foursquare" time="5.796502">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Empty &quot;PROVIDER_NAME&quot;" time="0.385089">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Empty &quot;PROVIDER_PLACE_ID&quot;" time="0.381551">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Invalid &quot;PROVIDER_NAME&quot;" time="0.400566">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Invalid &quot;PROVIDER_PLACE_ID&quot;" time="0.482137">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Non-Existent &quot;PROVIDER_NAME&quot;" time="0.401971">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Non-Existent &quot;PROVIDER_PLACE_ID&quot;" time="0.516208">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Creating the same object twice, facebook" time="4.481081">
+    </testcase>
+    <testcase classname="Sonar Rest Api, PUT method" name="Creating a new Sonar Object, Creating the same object twice, foursquare" time="4.617506">
+    </testcase>
+</testsuite>

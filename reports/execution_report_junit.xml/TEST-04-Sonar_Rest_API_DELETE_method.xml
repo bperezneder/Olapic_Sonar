@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite classname="behat.features" errors="0" failures="0" name="Sonar Rest Api, DELETE method" file="/home/nano/Documents/Olapic_Sonar/features/04-Sonar_Rest_API_DELETE_method.feature" tests="88" time="18.044703">
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Sunny Day scenario, facebook" time="3.804148">
+    </testcase>
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Sunny Day scenario, foursquare" time="4.005337">
+    </testcase>
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Empty PROVIDER_NAME" time="0.397856">
+    </testcase>
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Empty PROVIDER_PLACE_ID" time="0.405561">
+    </testcase>
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Invalid PROVIDER_NAME" time="0.386002">
+    </testcase>
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Invalid PROVIDER_PLACE_ID" time="0.383518">
+    </testcase>
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Non-Existent PROVIDER_NAME" time="0.388088">
+    </testcase>
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Non-Existent PROVIDER_PLACE_ID" time="0.388223">
+    </testcase>
+    <testcase classname="Sonar Rest Api, DELETE method" name="Deletting Sonar Object, Deletig the same object twice" time="7.883626">
+    </testcase>
+</testsuite>
