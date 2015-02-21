@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite classname="behat.features" errors="0" failures="0" name="Sonar Rest Api, GET method" file="/home/nano/Documents/Olapic_Sonar/features/Sonar_Rest_API_GET_method.feature" tests="18" time="1.345402">
-    <testcase classname="Sonar Rest Api, GET method" name="Getting Sonar Object, Sunny Day scenario" time="1.345077">
-    </testcase>
-</testsuite>

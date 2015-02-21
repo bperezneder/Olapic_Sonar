@@ -227,6 +227,14 @@ class RestContext extends BehatContext
         }
     	
     }
+    
+	/**
+     * @Then /^I wait (\d+) seconds$/
+     */
+    public function iWantToWaitSeconds($seconds)
+    {
+    	sleep($seconds);
+    }
 
      /**
      * @Then /^echo last response$/
