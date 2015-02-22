@@ -1,6 +1,6 @@
 # Olapic Sonar API
 ##Restful API testing Using Behat
-=========================================
+
 
 ###Requirements:
 - Having installed PHP5
